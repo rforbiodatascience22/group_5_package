@@ -1,4 +1,14 @@
+
+#' Title
+#'export Codon
+#' @param codons
+#'
+#' @return codon string with aminoacid and codon
+#' @export
+#'
+#' @examples
+#'
 export_codon <- function(codons){
-  name_me2 <- paste0(codon_table[codons], collapse = "")# collpse converts multiple strings into one character string
-  return(name_me2)
+  codon_string <- paste0(codon_table[codons], collapse = "")# collpse converts multiple strings into one character string
+  return(codont_string)
 }

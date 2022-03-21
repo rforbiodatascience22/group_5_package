@@ -1,4 +1,4 @@
-#' Title
+#' Translates DNA to RNA
 #'
 #' @param DNA_seq #String of DNA sequence
 #'

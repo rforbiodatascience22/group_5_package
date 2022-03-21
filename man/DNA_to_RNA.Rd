@@ -2,7 +2,7 @@
 % Please edit documentation in R/DNA_to_RNA.R
 \name{DNA_to_RNA}
 \alias{DNA_to_RNA}
-\title{Title}
+\title{Translates DNA to RNA}
 \usage{
 DNA_to_RNA(DNA_seq)
 }
@@ -13,7 +13,7 @@ DNA_to_RNA(DNA_seq)
 A RNA sequence
 }
 \description{
-Title
+Translates DNA to RNA
 }
 \examples{
 # "ATGC" > "AUGC"

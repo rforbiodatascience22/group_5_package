@@ -1,2 +1,6 @@
-^mypkgname\.Rproj$
+^DOgma_grp5\.Rproj$
 ^\.Rproj\.user$
+^DOgma_grp5\.Rcheck$
+^DOgma_grp5.*\.tar\.gz$
+^DOgma_grp5.*\.tgz$
+^LICENSE\.md$

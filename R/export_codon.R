@@ -1,7 +1,7 @@
 
 #' Title
 #'export amino_acid
-#' @param codons
+#' @param codons: function receives RNA codon and gives AminoAcid shortcut
 #'
 #' @return amino_acid
 #' @export

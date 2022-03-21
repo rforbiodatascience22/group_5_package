@@ -3,3 +3,4 @@
 export(AA_abundance)
 importFrom(magrittr,`%>%`)
 export(DNA_generator)
+export(DNA_to_RNA)

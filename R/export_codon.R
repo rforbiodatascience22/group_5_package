@@ -12,10 +12,7 @@
 #'
 export_amino_acid <- function(codons){
   codon_string <- paste0(codon_table[codons], collapse = "")# collpse converts multiple strings into one character string
-  return(codont_string)
+  return(codon_string)
 }
 
 
-export_amino_acid("ABC")
-export_amino_acid("AUGU")
-export_amino_acid("AUG")

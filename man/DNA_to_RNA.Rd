@@ -7,7 +7,7 @@
 DNA_to_RNA(DNA_seq)
 }
 \arguments{
-\item{DNA_seq}{#String of DNA sequence}
+\item{DNA_seq}{String of DNA sequence}
 }
 \value{
 A RNA sequence

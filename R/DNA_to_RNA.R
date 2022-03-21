@@ -1,8 +1,8 @@
 #' Translates DNA to RNA
 #'
-#' @param DNA_seq #String of DNA sequence
+#' @param DNA_seq String of DNA sequence
 #'
-#' @return # A RNA sequence
+#' @return A RNA sequence
 #' @export
 #'
 #' @examples

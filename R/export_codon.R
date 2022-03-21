@@ -1,9 +1,8 @@
-
-#' Title
-#'export amino_acid
-#' @param codons
+#' Convert codon vector to amino acids
 #'
-#' @return amino_acid
+#' @param codons Vector of RNA codons
+#'
+#' @return Amino acid sequence
 #' @export
 #'
 #' @examples
@@ -11,7 +10,7 @@
 #'"S"
 #'
 export_amino_acid <- function(codons){
-  codon_string <- paste0(codon_table[codons], collapse = "")# collpse converts multiple strings into one character string
+  codon_string <- paste0(codon_table[codons], collapse = "")# collapse converts multiple strings into one character string
   return(codon_string)
 }
 

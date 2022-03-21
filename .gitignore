@@ -1,8 +1,10 @@
 .Rproj.user
 .Rhistory
 .Rdata
+.RData
 .httr-oauth
 .DS_Store
 DOgma_grp5.Rcheck/
 DOgma_grp5*.tar.gz
 DOgma_grp5*.tgz
+DOgma.Rcheck/

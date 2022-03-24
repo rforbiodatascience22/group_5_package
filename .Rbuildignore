@@ -3,3 +3,6 @@
 ^DOgma\.Rcheck$
 ^DOgma.*\.tar\.gz$
 ^DOgma.*\.tgz$
+^.*\.Rproj$
+^doc$
+^Meta$

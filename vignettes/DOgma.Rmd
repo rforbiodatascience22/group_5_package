@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+Link to GitHub: https://github.com/rforbiodatascience22/group_5_package
 
 **Group 5: Astrid (s184248), Caroline (s183493), Christian (s165476), Frederik
 (s184260) and Nils (s220672)**

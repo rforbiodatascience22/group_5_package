@@ -22,9 +22,7 @@ knitr::opts_chunk$set(
 devtools::load_all()
 library(DOgma)
 ```
-Dogma is an R package meant to mimic the molecular dogma of biology. Thus, DOgma can be used to translate DNA to RNA and then translate the RNA sequence to a protein sequence by using the 64 different codons of the genetic code. The package has multiple use cases, one of which is analysing the abundances of amino acids in protein sequences. However, the package can also be used only to translate DNA sequences to protein sequences. The library limits the use of dependencies to make sure that the user does not have way to many functions added to their NAMESPACE to limit confusion. Furthermore, instead of using the "\@importFrom package function" the function from other libraries will be using the package::function() syntax. This verifies both that the function is called directly fromthe correct package and that it does not call function() from the NAMESPACE of the user.
-
-The package contains 5 different functions: "DNA_generator","DNA_to_RNA", "sequence_to_codons","export_codons" and "AA_abundance". The first function "DNA_generator" can be used to generate a random DNA sequence of a specified length.
+Dogma is an R package meant to mimic the molecular dogma of biology. Thus, DOgma can be used to translate DNA to RNA and then translate the RNA sequence to a protein sequence by using the 64 different codons of the genetic code. The package contains 5 different functions: "DNA_generator","DNA_to_RNA", "sequence_to_codons","export_codons" and "AA_abundance". The first function "DNA_generator" can be used to generate a random DNA sequence of a specified length.
 
 ```{r }
 DNA_seq <- DNA_generator(12)
@@ -51,3 +49,4 @@ The abundance of each amino acid in the genreated protien sequence can then be a
 aa_abundance_graph <- AA_abundance(prot_seq)
 aa_abundance_graph
 ```
+The package has multiple use cases, one of which is analysing the abundances of amino acids in protein sequences. However, the package can also be used only to translate DNA sequences to protein sequences. The library limits the use of dependencies to make sure that the user does not have way to many functions added to their NAMESPACE to limit confusion. Furthermore, instead of using the "\@importFrom package function" the function from other libraries will be using the package::function() syntax. This verifies both that the function is called directly fromthe correct package and that it does not call function() from the NAMESPACE of the user.

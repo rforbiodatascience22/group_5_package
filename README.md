@@ -18,7 +18,15 @@ RNA sequence to a protein sequence by using the 64 different codons of
 the genetic code. The package has multiple use cases, one of which is
 analysing the abundances of amino acids in protein sequences. However,
 the package can also be used only to translate DNA sequences to protein
-sequences. The package contains 5 different functions:
+sequences. The library limits the use of dependencies to make sure that
+the user does not have way to many functions added to their NAMESPACE to
+limit confusion. Furthermore, instead of using the “@importFrom package
+function” the function from other libraries will be using the
+package::function() syntax. This verifies both that the function is
+called directly fromthe correct package and that it does not call
+function() from the NAMESPACE of the user.
+
+The package contains 5 different functions:
 “DNA_generator”,“DNA_to_RNA”, “sequence_to_codons”,“export_codons” and
 “AA_abundance”. The first function “DNA_generator” can be used to
 generate a random DNA sequence of a specified length.
@@ -26,7 +34,7 @@ generate a random DNA sequence of a specified length.
 ``` r
 DNA_seq <- DNA_generator(12)
 DNA_seq
-#> [1] "TTACCTGGGACC"
+#> [1] "CGACTCTGGAGC"
 ```
 
 The next function “DNA_to_RNA” translates the DNA sequence into an RNA
@@ -35,7 +43,7 @@ sequence.
 ``` r
 RNA_seq <- DNA_to_RNA(DNA_seq)
 RNA_seq
-#> [1] "UUACCUGGGACC"
+#> [1] "CGACUCUGGAGC"
 ```
 
 The RNA codons can then be generated from the RNA sequence by using the
@@ -44,7 +52,7 @@ function sequence_to_codons.
 ``` r
 codons <- sequence_to_codons(RNA_seq)
 codons
-#> [1] "UUA" "CCU" "GGG" "ACC"
+#> [1] "CGA" "CUC" "UGG" "AGC"
 ```
 
 These generated codons can then be used to translate the RNA sequence
@@ -53,7 +61,7 @@ into a protein sequence by using the function “export_amino_acid”.
 ``` r
 prot_seq <- export_amino_acid(codons)
 prot_seq
-#> [1] "LPGT"
+#> [1] "RLWS"
 ```
 
 The abundance of each amino acid in the genreated protien sequence can

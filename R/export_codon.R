@@ -11,6 +11,7 @@
 #'
 export_amino_acid <- function(codons){
   codon_string <- paste0(codon_table[codons], collapse = "")# collapse converts multiple strings into one character string
+  codon_string <- stringr::str_replace(codon_string, "\\*", "_")
   return(codon_string)
 }
 
